@@ -1,0 +1,789 @@
+/*****Importes*****/
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@500 & display=swap');
+
+body{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+/*****Estilos de la primer seccion*****/
+.header{
+    display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+.header img{
+    width: 120px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 125px;
+
+    /*Fondo transparente de imagen*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.navbar{
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+  
+.navbar a{
+    float: right;
+    display: flex;
+    color: hsl(216,15%,63%);
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+  
+.navbar a:hover{
+    background-color: hsl(227,64%,47%);
+    color: white;
+    box-shadow: 0px 34px 39px 0px rgba(94,90,94,1);
+}
+  
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/*****Estilos de la segunda opción*****/
+.schedule{
+    display: flex;
+    height: 680px;
+}
+
+/*Section schedule-info*/
+.schedule-info{
+    display: flex;
+}
+
+.schedule-info h1{
+    display: flex;
+    position: absolute;
+    width: 28%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: hsl(217,57%,28%);
+
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.schedule-info p{
+    display: flex;
+    width: 65%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    color: hsl(216,15%,63%);
+    line-height: 20px;
+
+    margin-top: 30%;
+    margin-left: 12%;
+}
+
+.schedule-info ul{
+    display: flex;
+    position: absolute;
+
+    width: 50%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: hsl(217,57%,28%);
+
+    margin-top: 20%;
+    margin-left: 3%;
+}
+
+.schedule-info li{
+    list-style: none;
+    margin-left: 5%;
+}
+
+.schedule-info img{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/*Section schedule-date*/
+
+/*Section schedule-img*/
+.schedule-img{
+    height: 200px;
+    display: flex;
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+.schedule-img-size{
+    width: 730px;
+    height: 680px;
+}
+
+.schedule-icon{
+    width: 20px;
+    height: 20px;
+
+    /*Fondo transparente de imagen*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.schedule h2{
+    display: flex;
+    position: absolute;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: hsl(217,57%,28%);
+
+    margin-top: 34%;
+    margin-left: 50px;
+}
+
+.schedule h2 img{
+    margin-right: 10px;
+
+    /*Fondo transparente de imagen*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.schedule-date{
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    padding: 40px;
+    padding-bottom: 35px;
+
+    margin-top: 37%;
+    margin-left: 5%;
+}
+
+.container-form{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    vertical-align: middle;
+}
+
+.container-form label, select, input{
+    display: block;
+}
+
+.container-form label{
+    font-family: 'Roboto',sans-serif;
+    color: hsl(216,15%,63%);
+    font-weight: bold;
+}
+
+.container-form img{
+    margin-right: 20px;
+}
+
+.container-form select{
+    margin-top: 15px;
+    margin-left: 20px;
+
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+
+    font-family: 'Roboto',sans-serif;
+    color: hsl(217,57%,28%);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.date{
+    margin-top: 15px;
+    margin-left: 20px;
+
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+
+    font-family: 'Roboto',sans-serif;
+    color: hsl(217,57%,28%);
+    font-weight: bold;
+    font-size: larger;
+}
+
+#submit{
+    background-color: hsl(227,63%,50%);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: normal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    margin:20px
+}
+
+#submit:hover{
+    background-color: hsl(227,64%,47%);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 30px 0px rgba(94,90,94,1);
+}
+
+/*****Estilos de la tercera sección*****/
+.enterprises{
+    background-color: white;
+    height: 200px;
+}
+
+/*Centrado de logos*/
+.container-enterprises{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Filtro blanco y negro para imagenes*/
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/*Tamaño de imagen*/
+.img-logo-size{
+    width: 150px;
+    height: 60px;
+    margin: 0 40px;
+}
+
+/*Transparencia de imagen*/
+.img-transparency{
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+/*Fondo transparente de imagen*/
+.img-background{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+/*****Estilos de la cuarta seccion*****/
+.vaccination-info{
+    display: inline-block;
+    background-color: white;
+    height: 700px;
+}
+
+/*Section container-vacination*/
+.container-vaccination{
+    display: block;
+}
+
+.container-vaccination h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: hsl(217,51%,30%);
+
+    position: relative;
+    margin-top: 5%;
+    margin-left: 7%;
+}
+
+.container-vaccination p{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    color: hsl(216,15%,63%);
+    width: 40%;
+
+    position: relative;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+
+/*Section vaccination-info-list*/
+.vaccination-info-list{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+    margin-top: 7%;
+}
+
+/*Section container-vaccination-info-list*/
+.container-vaccination-info-list{
+    display: inline-block;
+
+    /*Padding de cada informacion*/
+    padding: 40px;
+    width: 50%;
+}
+
+.container-vaccination-info-list:hover{
+    box-shadow: 0px 0px 30px 0px rgba(94,90,94,1);
+}
+
+/*Ajustando el tamaño de los iconos*/
+.container-vaccination-info-list img{
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.container-vaccination-img{
+    display: flex;
+
+    /*Fondo transparente de imagen*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.container-vaccination-info-list h3{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: hsl(217,51%,30%);
+
+    width: 65%;
+}
+.container-vaccination-info-list p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: hsl(216,15%,63%);
+
+    margin-top: 5%;
+
+    width: 85%;
+}
+
+/*****Estilos de la quinta sección*****/
+.preparations{
+    display: flex;
+    background-color: white;
+    height: 700px;
+}
+
+/*Section preparations-img*/
+
+/*Forzando a dejar la imagen en la izquierda*/
+.preparations-img{
+    display: flex;
+    direction: rtl;
+    justify-content: flex-end;
+}
+
+.img-body-size1{
+    width: 500px;
+    height: 700px;
+}
+
+/*Section container-preparations-info*/
+.container-preparations-info{
+    display: block;
+}
+
+.container-preparations-info h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: hsl(217,51%,30%);
+
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.container-preparations-info p{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    color: hsl(216,15%,63%);
+    width: 70%;
+
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.container-list-preparations-info{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+
+    width: 60%;
+
+    margin-top: 20%;
+    margin-left: 40%;
+}
+
+.container-list-preparations-info details summary img{
+    width: 20px;
+    height: 20px;
+
+    /*Fondo transparente de imagen*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+/*Section container-list-preparations-info*/
+details { 
+    background-color: #f6f8fa;
+    width: 75%;
+    margin-bottom: 1rem;   
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;  
+    color: hsl(217,51%,30%);
+    position: relative;  
+}
+
+details summary {  
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;  
+}
+
+details p {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+    background: #f6f8fa;
+    color: hsl(216,15%,63%);
+}
+  
+details:hover,
+details[open] {
+    box-shadow: 5px 5px 15px #d9d9d9;
+}
+  
+details[open] {
+    background: #ffffff;
+}
+  
+details[open] summary {
+    font-weight: bold;
+}
+
+details summary::before {
+    position: absolute;
+    content: "↕";    
+    font-size: 1.75rem;
+    top: 10px;
+    right: 16px;  
+}
+  
+details[open] summary::before {
+    -webkit-animation: rotate 0.6s ease-in-out both;
+          animation: rotate-emoji 0.6s ease-in-out both;
+}
+  
+@-webkit-keyframes rotate-emoji {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg);
+    }
+}
+  
+
+/*****Estilos de la sexta sección*****/
+.emergency-contact{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 700px;
+}
+
+/*Section emergency-contact-info*/
+.emergency-contact-info {
+    display: block;
+}
+
+.container-emergency-contact-info{
+    display: inline-block;
+}
+
+.container-emergency-contact-info h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: hsl(217,51%,30%);
+
+    position: relative;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.container-emergency-contact-info p{
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    color: hsl(216,15%,63%);
+
+    width: 70%;
+
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+/*Manejando los botones*/
+.container-emergency-contact-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: transparent;
+
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container-emergency-contact{
+    display: block;
+
+    background-color: transparent;
+
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.container-emergency-contact img{
+    width: 40px;
+    height: 40px;
+
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+
+    margin-left: 40%;
+}
+
+.container-emergency-contact h3{
+    font-family: 'Roboto',sans-serif;
+    color: hsl(217,57%,28%);
+
+    text-align: center;
+}
+
+.container-emergency-contact p{
+    font-family: 'Roboto',sans-serif;
+    color: hsl(219,14%,56%);
+    text-align: center;
+
+    margin-top: 2%;
+}
+
+.container-emergency-contact input{
+    background-color: hsl(222,100%,97%);
+    border: none;
+    border-radius: 7px;
+    color: hsl(227,65%,52%);
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    margin:20px
+}
+
+.container-emergency-contact input:hover{
+    background-color: hsl(227,64%,47%);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 5px 30px 0px rgba(94,90,94,1);
+}
+
+/*Section emergency-contact-img*/
+/*Moviendo la imagen a la derecha*/
+.emergency-contact-img{
+    display: flex;
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+.img-body-size2{
+    width: 500px;
+    height: 700px;
+}
+
+/*****Estilos del pie de página*****/
+.footer{
+    display: flex;
+    background-color: hsl(222,100%,96%);
+    height: 400px;
+    width: 100%;
+}
+
+/*Section goal*/
+.goal{
+    display: block;
+    width: 50%;
+
+    margin: 5%;
+}
+
+.goal img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    margin-bottom: 3%;
+    margin-left: -2%;
+}
+
+.goal p{
+    width: 35%;
+    text-align: justify;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(216,15%,63%);
+}
+
+/*Section about*/
+.about {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 50%;
+}
+
+.about h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: hsl(217,57%,28%);
+}
+
+.about ul{
+    margin-top: 20%;
+}
+
+.about li{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: hsl(216,15%,63%);
+
+    list-style: none;
+
+    margin-top: 20%;
+}
+
+/*Section company*/
+.company{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 65%;
+}
+
+.company h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: hsl(217,57%,28%);
+}
+
+.company ul{
+    margin-top: 20%;
+}
+
+.company li{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: hsl(216,15%,63%);
+
+    list-style: none;
+
+    margin-top: 20%;
+}
+
+/*Section support*/
+.support{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 80%;
+}
+
+.support h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 900;
+    color: hsl(217,57%,28%);
+}
+
+.support ul{
+    margin-top: 20%;
+}
+
+.support li{
+    font-family: 'Roboto',sans-serif;
+    font-weight: bold;
+    color: hsl(216,15%,63%);
+
+    list-style: none;
+
+    margin-top: 20%;
+}
+
+/*Section terms*/
+/***** footer *****/
+.terms{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    background-color: hsl(222,100%,96%);
+}
+
+.terms p{
+    display: inline-block;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: hsl(216,15%,63%);
+    margin-top: 1%;
+}
+
+.terms1{
+    margin-left: 4%;
+}
+
+.terms2{
+    display: flex;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.terms3{
+    display: flex;
+    margin-left: 50%;
+}
+
+/**********************************************************/
